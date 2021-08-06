@@ -1,5 +1,9 @@
 import React from 'react'
 
-export const Button: React.FC<any> = (props) => {
-  return (<button {...props}> Click </button>)
+interface ButtonProps {
+  onClick: () => void,
+}
+
+export const Button: React.FC<ButtonProps> = (props) => {
+  return (<button {...props}>{props.children}</button>)
 }

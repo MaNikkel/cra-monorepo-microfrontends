@@ -1,11 +1,10 @@
 
-import './App.css';
 import { Button } from '@cmm/components'
 
 function App() {
   return (
     <div className="App">
-      <Button />
+      <Button onClick={() => console.log('hello monorepo')}>Alo</Button>
     </div>
   );
 }
