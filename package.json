@@ -8,7 +8,7 @@
   "scripts": {
     "start": "lerna exec --scope @cmm/container -- yarn start",
     "build": "lerna exec --scope @cmm/container -- yarn build",
-    "serve": "lerna exec --scope @cmm/container -- serve -s build"
+    "serve": "lerna exec --scope @cmm/container -- npx serve -s build"
   },
   "workspaces": {
     "packages": [
