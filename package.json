@@ -6,7 +6,9 @@
     "lerna": "^4.0.0"
   },
   "scripts": {
-    "start": "lerna exec --scope @cmm/container -- yarn start"
+    "start": "lerna exec --scope @cmm/container -- yarn start",
+    "build": "lerna exec --scope @cmm/container -- yarn build",
+    "serve": "lerna exec --scope @cmm/container -- serve -s build"
   },
   "workspaces": {
     "packages": [
